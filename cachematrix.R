@@ -9,7 +9,7 @@ makeCacheMatrix <- function(x = matrix()) {
   s <- NULL
   set <- function(y){
     x <<- y
-    s <- NULL
+    s <<- NULL
   }
   get <- function() x
   setSolve <- function(solve) s <<- solve
@@ -21,7 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## function returns the inverse of the passed special "matrix"
-## calculates the inverse or returns cached inverse if already calculated
+## calculates the inverse or returns cached inverse if already calculatedx
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x
